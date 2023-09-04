@@ -3,8 +3,8 @@ import JsBarcode from "jsbarcode";
 
 interface Props {
   value: string;
-  elementTag: "img" | "canvas" | "svg";
-  options: JsBarcode.Options;
+  elementTag?: "img" | "canvas" | "svg";
+  options?: JsBarcode.Options;
 }
 
 export default class extends SvelteComponent<Props, {}, {}> {}
