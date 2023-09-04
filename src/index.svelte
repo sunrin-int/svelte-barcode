@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
   import { onMount, tick, afterUpdate } from "svelte";
   import JsBarcode from "jsbarcode";
 
-  let barcode;
-  export let value;
-  export let elementTag = "img";
-  export let options;
-  const defaultOptions = {
+  let barcode: HTMLImageElement | HTMLCanvasElement | SVGSVGElement;
+  export let value: string;
+  export let elementTag: "img" | "canvas" | "svg" = "img";
+  export let options: JsBarcode.Options;
+  const defaultOptions: JsBarcode.Options = {
     format: "CODE128",
     width: 2,
     height: 100,

@@ -12,7 +12,7 @@
     "url": "https://github.com/Bunlong/svelte-barcode.git/issues"
   },
   "homepage": "https://github.com/Bunlong/svelte-barcode",
-  "svelte": "src/index.js",
+  "svelte": "src/index.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "scripts": {
@@ -24,8 +24,11 @@
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup": "^2.0.0",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-svelte": "^6.0.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^5.0.4",
+    "typescript": "^5.2.2"
   },
   "keywords": [
     "svelte",
