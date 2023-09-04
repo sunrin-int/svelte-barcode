@@ -30,11 +30,13 @@
 
   onMount(async () => {
     await tick();
+    if (!value) return;
     JsBarcode(barcode, value, defaultOptions);
   });
 
   afterUpdate(async () => {
     await tick();
+    if (!value) return;
     JsBarcode(barcode, value, Object.assign(defaultOptions, options));
   });
 </script>
