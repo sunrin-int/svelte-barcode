@@ -41,5 +41,6 @@
   ],
   "dependencies": {
     "jsbarcode": "^3.11.5"
-  }
+  },
+  "packageManager": "yarn@3.6.3"
 }
